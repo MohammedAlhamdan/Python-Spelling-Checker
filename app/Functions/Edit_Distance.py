@@ -38,7 +38,7 @@ def editDistance(str1, str2):
     return current[n]
  
 
-str1 = "night"
-str2 = "nigt"   
-ans = editDistance(str1, str2)
-print(ans)
+# str1 = "night"
+# str2 = "nigt"   
+# ans = editDistance(str1, str2)
+# print(ans)

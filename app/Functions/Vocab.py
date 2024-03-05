@@ -21,11 +21,11 @@ def spelling_checker(misspelled_word, vocabulary_dict):
     corrected_words = [candidate[0] for candidate in candidates[:5]]
     return corrected_words
 
-# Example usage:
-corpus_file = 'books\Anna_Karenina_by_Leo_Tolstoy.rtf'  # Replace the path to your corpus file
-vocabulary_dict = create_vocabulary_dict(corpus_file)
+# # Example usage:
+# corpus_file = 'books\Anna_Karenina_by_Leo_Tolstoy.rtf'  # Replace the path to your corpus file
+# vocabulary_dict = create_vocabulary_dict(corpus_file)
 
-#misspelled_word = 'teh'
-misspelled_word = input("Enter a word: ")
-corrected_words = spelling_checker(misspelled_word, vocabulary_dict)
-print("Corrected words for '{}' are:".format(misspelled_word), corrected_words)
+# #misspelled_word = 'teh'
+# misspelled_word = input("Enter a word: ")
+# corrected_words = spelling_checker(misspelled_word, vocabulary_dict)
+# print("Corrected words for '{}' are:".format(misspelled_word), corrected_words)

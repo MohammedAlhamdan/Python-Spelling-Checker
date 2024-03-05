@@ -1,0 +1,30 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Distance and Spelling Checker</title>
+</head>
+<body>
+    <h1>Edit Distance and Spelling Checker</h1>
+    <form action="/result" method="post">
+        <label for="str1">Word 1:</label><br>
+        <input type="text" id="str1" name="str1"><br>
+        <label for="str2">Word 2:</label><br>
+        <input type="text" id="str2" name="str2"><br><br>
+        <input type="submit" value="Calculate Edit Distance">
+    </form>
+
+    <hr>
+
+    <form action="/spelling_checker" method="post">
+        <label for="corpus_file">Corpus File Location:(example->books\name.rtf) </label><br>
+        <input type="text" id="corpus_file" name="corpus_file"><br>
+        <label for="misspelled_word">Misspelled Word:</label><br>
+        <input type="text" id="misspelled_word" name="misspelled_word"><br><br>
+        <input type="submit" value="Check Spelling">
+    </form>
+</body>
+</html>
